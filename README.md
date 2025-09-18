@@ -3,6 +3,12 @@
 A full-stack maintenance request and tracking application built with **C# .NET** and **Angular**.  
 This project simulates a real-world system for managing maintenance tasks in a facility, from the initial report to resolution.
 
+## Demo
+
+(To add your video: Create a `demo` folder in your project, save your GIF/video file there as `MaintenancePortal.gif`, and then push the changes to GitHub.)
+
+![Demo](./demo/MaintenancePortal.gif)
+
 ## Features
 
 - **User Authentication:** Secure user registration and login system.
