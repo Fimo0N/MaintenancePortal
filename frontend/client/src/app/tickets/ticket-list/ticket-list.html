@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-between align-items-center">
+    <h2>Maintenance Tickets</h2>
+    <button class="btn btn-primary" (click)="toggleCreateForm()">
+        {{ showCreateForm ? 'Cancel' : 'Report New Issue' }}
+    </button>
+</div>
+
+<!-- The create form component will be shown/hidden based on the toggle -->
+<app-ticket-create *ngIf="showCreateForm" (ticketCreated)="loadTickets(); showCreateForm = false;"></app-ticket-create>
+
+<table class="table table-striped mt-4">
+    <thead>
+        <tr>
+            <th style="width: 5%"># ID</th>
+            <th style="width: 35%">Title</th>
+            <th style="width: 15%">Asset</th>
+            <th style="width: 10%">Status</th>
+            <th style="width: 10%">Priority</th>
+            <th style="width: 10%">Reported By</th>
+            <th style="width: 15%">Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Updated to use real data -->
+        <tr *ngFor="let ticket of tickets">
+            <td>{{ticket.id}}</td>
+            <td>{{ticket.title}}</td>
+            <td>{{ticket.asset.name}}</td>
+            <td>{{ticket.status}}</td>
+            <td>{{ticket.priority}}</td>
+            <td>{{ticket.reportedByUser.username}}</td>
+            <td>{{ticket.createdAt | date:'short'}}</td>
+        </tr>
+    </tbody>
+</table>
+

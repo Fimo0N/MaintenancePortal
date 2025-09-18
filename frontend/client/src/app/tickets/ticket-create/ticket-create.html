@@ -1,0 +1,33 @@
+    <div class="card card-body mt-4">
+        <h4 class="card-title">Report a New Maintenance Issue</h4>
+        <form #createForm="ngForm" (ngSubmit)="createTicket()">
+            <!-- New Asset Dropdown -->
+            <div class="mb-3">
+                <label for="asset" class="form-label">Asset</label>
+                <select class="form-select" id="asset" name="assetId" [(ngModel)]="model.assetId" required>
+                    <option *ngFor="let asset of assets" [value]="asset.id">{{asset.name}}</option>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="title" name="title" [(ngModel)]="model.title" required>
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="3" [(ngModel)]="model.description" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="priority" class="form-label">Priority</label>
+                <select class="form-select" id="priority" name="priority" [(ngModel)]="model.priority">
+                    <option>Low</option>
+                    <option>Medium</option>
+                    <option>High</option>
+                    <option>Critical</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="!createForm.valid">Submit Ticket</button>
+        </form>
+    </div>
+    
+

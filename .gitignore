@@ -1,0 +1,24 @@
+# C# / .NET build artifacts
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+
+# Visual Studio
+.vs/
+
+# User secrets (important for security)
+**/secrets.json
+
+# Rider / Resharper
+.idea/
+
+# Angular / Node
+node_modules/
+dist/
+.angular/
+npm-debug.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

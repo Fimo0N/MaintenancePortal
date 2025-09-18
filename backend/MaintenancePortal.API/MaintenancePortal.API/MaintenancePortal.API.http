@@ -1,0 +1,6 @@
+@MaintenancePortal.API_HostAddress = http://localhost:5036
+
+GET {{MaintenancePortal.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
