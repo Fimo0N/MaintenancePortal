@@ -4,9 +4,8 @@ A full-stack maintenance request and tracking application built with **C# .NET**
 This project simulates a real-world system for managing maintenance tasks in a facility, from the initial report to resolution.
 
 ## Demo
+[Watch the demo on YouTube](https://youtu.be/tY3iCEh3o_Y)
 
-
-![Application Demo](./demo/MaintenancePortal.mp4)
 
 ## Features
 
