@@ -6,7 +6,7 @@ This project simulates a real-world system for managing maintenance tasks in a f
 ## Demo
 
 
-![Demo](./demo/MaintenancePortal.mp4)
+![Application Demo](./demo/MaintenancePortal.mp4)
 
 ## Features
 
